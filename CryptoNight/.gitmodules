@@ -1,0 +1,6 @@
+[submodule "cpuminer-multi"]
+	path = cpuminer-multi
+	url = git@github.com:tpruvot/cpuminer-multi.git
+[submodule "xmrig"]
+	path = xmrig
+	url = git@github.com:xmrig/xmrig.git
