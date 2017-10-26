@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AAF0E8E1FA1C96300A993D0 /* CryptNightWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9CD91F9A2A2200C07CFE /* CryptNightWrapper.mm */; };
+		3AAF0E8F1FA1C97100A993D0 /* aesb.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EEB1F9A32F900C07CFE /* aesb.c */; };
+		3AAF0E901FA1C97100A993D0 /* blake256.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EEC1F9A32F900C07CFE /* blake256.c */; };
+		3AAF0E911FA1C97100A993D0 /* chacha8.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EEE1F9A32F900C07CFE /* chacha8.c */; };
+		3AAF0E921FA1C97100A993D0 /* crypto-ops-data.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EF11F9A32F900C07CFE /* crypto-ops-data.c */; };
+		3AAF0E931FA1C97100A993D0 /* crypto-ops.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EF21F9A32F900C07CFE /* crypto-ops.c */; };
+		3AAF0E941FA1C97100A993D0 /* groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EF61F9A32F900C07CFE /* groestl.c */; };
+		3AAF0E951FA1C97100A993D0 /* hash-extra-blake.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EF91F9A32F900C07CFE /* hash-extra-blake.c */; };
+		3AAF0E961FA1C97100A993D0 /* hash-extra-groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EFA1F9A32F900C07CFE /* hash-extra-groestl.c */; };
+		3AAF0E971FA1C97100A993D0 /* hash-extra-jh.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EFB1F9A32F900C07CFE /* hash-extra-jh.c */; };
+		3AAF0E981FA1C97100A993D0 /* hash-extra-skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EFC1F9A32F900C07CFE /* hash-extra-skein.c */; };
+		3AAF0E991FA1C97100A993D0 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EFE1F9A32F900C07CFE /* hash.c */; };
+		3AAF0E9A1FA1C97100A993D0 /* jh.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F021F9A32F900C07CFE /* jh.c */; };
+		3AAF0E9B1FA1C97100A993D0 /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F041F9A32F900C07CFE /* keccak.c */; };
+		3AAF0E9C1FA1C97100A993D0 /* oaes_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F071F9A32F900C07CFE /* oaes_lib.c */; };
+		3AAF0E9D1FA1C97100A993D0 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F091F9A32F900C07CFE /* random.c */; };
+		3AAF0E9E1FA1C97100A993D0 /* skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F0C1F9A32F900C07CFE /* skein.c */; };
+		3AAF0E9F1FA1C97100A993D0 /* slow-hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F0F1F9A32F900C07CFE /* slow-hash.c */; };
+		3AAF0EA01FA1C97100A993D0 /* tree-hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F101F9A32F900C07CFE /* tree-hash.c */; };
 		3AFC9BDD1F9A285700C07CFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9BDC1F9A285700C07CFE /* AppDelegate.m */; };
 		3AFC9BE01F9A285700C07CFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9BDF1F9A285700C07CFE /* ViewController.m */; };
 		3AFC9BE31F9A285700C07CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC9BE11F9A285700C07CFE /* Main.storyboard */; };
@@ -232,9 +251,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AAF0E8F1FA1C97100A993D0 /* aesb.c in Sources */,
+				3AAF0E921FA1C97100A993D0 /* crypto-ops-data.c in Sources */,
+				3AAF0E901FA1C97100A993D0 /* blake256.c in Sources */,
 				3AFC9BE01F9A285700C07CFE /* ViewController.m in Sources */,
+				3AAF0E951FA1C97100A993D0 /* hash-extra-blake.c in Sources */,
+				3AAF0E971FA1C97100A993D0 /* hash-extra-jh.c in Sources */,
+				3AAF0E9D1FA1C97100A993D0 /* random.c in Sources */,
+				3AAF0E8E1FA1C96300A993D0 /* CryptNightWrapper.mm in Sources */,
+				3AAF0E9B1FA1C97100A993D0 /* keccak.c in Sources */,
+				3AAF0EA01FA1C97100A993D0 /* tree-hash.c in Sources */,
+				3AAF0E9A1FA1C97100A993D0 /* jh.c in Sources */,
+				3AAF0E911FA1C97100A993D0 /* chacha8.c in Sources */,
+				3AAF0E961FA1C97100A993D0 /* hash-extra-groestl.c in Sources */,
+				3AAF0E9C1FA1C97100A993D0 /* oaes_lib.c in Sources */,
 				3AFC9BEB1F9A285700C07CFE /* main.m in Sources */,
+				3AAF0E9E1FA1C97100A993D0 /* skein.c in Sources */,
+				3AAF0E991FA1C97100A993D0 /* hash.c in Sources */,
 				3AFC9BDD1F9A285700C07CFE /* AppDelegate.m in Sources */,
+				3AAF0E9F1FA1C97100A993D0 /* slow-hash.c in Sources */,
+				3AAF0E941FA1C97100A993D0 /* groestl.c in Sources */,
+				3AAF0E931FA1C97100A993D0 /* crypto-ops.c in Sources */,
+				3AAF0E981FA1C97100A993D0 /* hash-extra-skein.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
