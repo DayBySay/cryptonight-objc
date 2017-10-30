@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    int len = 32;
+    int len = 0;
     char inputChar[len];
 
     char h[32];

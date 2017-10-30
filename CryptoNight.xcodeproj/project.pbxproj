@@ -7,25 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AAF0E8E1FA1C96300A993D0 /* CryptNightWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9CD91F9A2A2200C07CFE /* CryptNightWrapper.mm */; };
-		3AAF0E8F1FA1C97100A993D0 /* aesb.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EEB1F9A32F900C07CFE /* aesb.c */; };
-		3AAF0E901FA1C97100A993D0 /* blake256.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EEC1F9A32F900C07CFE /* blake256.c */; };
-		3AAF0E911FA1C97100A993D0 /* chacha8.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EEE1F9A32F900C07CFE /* chacha8.c */; };
-		3AAF0E921FA1C97100A993D0 /* crypto-ops-data.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EF11F9A32F900C07CFE /* crypto-ops-data.c */; };
-		3AAF0E931FA1C97100A993D0 /* crypto-ops.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EF21F9A32F900C07CFE /* crypto-ops.c */; };
-		3AAF0E941FA1C97100A993D0 /* groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EF61F9A32F900C07CFE /* groestl.c */; };
-		3AAF0E951FA1C97100A993D0 /* hash-extra-blake.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EF91F9A32F900C07CFE /* hash-extra-blake.c */; };
-		3AAF0E961FA1C97100A993D0 /* hash-extra-groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EFA1F9A32F900C07CFE /* hash-extra-groestl.c */; };
-		3AAF0E971FA1C97100A993D0 /* hash-extra-jh.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EFB1F9A32F900C07CFE /* hash-extra-jh.c */; };
-		3AAF0E981FA1C97100A993D0 /* hash-extra-skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EFC1F9A32F900C07CFE /* hash-extra-skein.c */; };
-		3AAF0E991FA1C97100A993D0 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9EFE1F9A32F900C07CFE /* hash.c */; };
-		3AAF0E9A1FA1C97100A993D0 /* jh.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F021F9A32F900C07CFE /* jh.c */; };
-		3AAF0E9B1FA1C97100A993D0 /* keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F041F9A32F900C07CFE /* keccak.c */; };
-		3AAF0E9C1FA1C97100A993D0 /* oaes_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F071F9A32F900C07CFE /* oaes_lib.c */; };
-		3AAF0E9D1FA1C97100A993D0 /* random.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F091F9A32F900C07CFE /* random.c */; };
-		3AAF0E9E1FA1C97100A993D0 /* skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F0C1F9A32F900C07CFE /* skein.c */; };
-		3AAF0E9F1FA1C97100A993D0 /* slow-hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F0F1F9A32F900C07CFE /* slow-hash.c */; };
-		3AAF0EA01FA1C97100A993D0 /* tree-hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9F101F9A32F900C07CFE /* tree-hash.c */; };
+		3A1E4BA91FA22638003DC16A /* libcommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A289DEC1FA220A2004E9521 /* libcommon.a */; };
+		3A289DE51FA21E44004E9521 /* libcncrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A289DE41FA21E41004E9521 /* libcncrypto.a */; };
+		3A289DEF1FA22B9A004E9521 /* int-util.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A289DEB1FA220A2004E9521 /* int-util.h */; };
 		3AFC9BDD1F9A285700C07CFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9BDC1F9A285700C07CFE /* AppDelegate.m */; };
 		3AFC9BE01F9A285700C07CFE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC9BDF1F9A285700C07CFE /* ViewController.m */; };
 		3AFC9BE31F9A285700C07CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC9BE11F9A285700C07CFE /* Main.storyboard */; };
@@ -35,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A289DE41FA21E41004E9521 /* libcncrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcncrypto.a; sourceTree = "<group>"; };
+		3A289DEB1FA220A2004E9521 /* int-util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "int-util.h"; sourceTree = "<group>"; };
+		3A289DEC1FA220A2004E9521 /* libcommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcommon.a; sourceTree = "<group>"; };
+		3ADF65FF1FA2E3F0009EC809 /* hash-ops.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hash-ops.h"; sourceTree = "<group>"; };
 		3AFC9BD81F9A285700C07CFE /* CryptoNight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoNight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFC9BDB1F9A285700C07CFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3AFC9BDC1F9A285700C07CFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,47 +33,6 @@
 		3AFC9BE71F9A285700C07CFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AFC9BE91F9A285700C07CFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AFC9BEA1F9A285700C07CFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3AFC9CD81F9A2A2200C07CFE /* CryptNightWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptNightWrapper.h; sourceTree = "<group>"; };
-		3AFC9CD91F9A2A2200C07CFE /* CryptNightWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CryptNightWrapper.mm; sourceTree = "<group>"; };
-		3AFC9EEA1F9A32F900C07CFE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		3AFC9EEB1F9A32F900C07CFE /* aesb.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aesb.c; sourceTree = "<group>"; };
-		3AFC9EEC1F9A32F900C07CFE /* blake256.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = blake256.c; sourceTree = "<group>"; };
-		3AFC9EED1F9A32F900C07CFE /* blake256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blake256.h; sourceTree = "<group>"; };
-		3AFC9EEE1F9A32F900C07CFE /* chacha8.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = chacha8.c; sourceTree = "<group>"; };
-		3AFC9EEF1F9A32F900C07CFE /* chacha8.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = chacha8.h; sourceTree = "<group>"; };
-		3AFC9EF01F9A32F900C07CFE /* cn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cn.h; sourceTree = "<group>"; };
-		3AFC9EF11F9A32F900C07CFE /* crypto-ops-data.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "crypto-ops-data.c"; sourceTree = "<group>"; };
-		3AFC9EF21F9A32F900C07CFE /* crypto-ops.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "crypto-ops.c"; sourceTree = "<group>"; };
-		3AFC9EF31F9A32F900C07CFE /* crypto-ops.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "crypto-ops.h"; sourceTree = "<group>"; };
-		3AFC9EF41F9A32F900C07CFE /* crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
-		3AFC9EF51F9A32F900C07CFE /* generic-ops.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "generic-ops.h"; sourceTree = "<group>"; };
-		3AFC9EF61F9A32F900C07CFE /* groestl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = groestl.c; sourceTree = "<group>"; };
-		3AFC9EF71F9A32F900C07CFE /* groestl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = groestl.h; sourceTree = "<group>"; };
-		3AFC9EF81F9A32F900C07CFE /* groestl_tables.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = groestl_tables.h; sourceTree = "<group>"; };
-		3AFC9EF91F9A32F900C07CFE /* hash-extra-blake.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "hash-extra-blake.c"; sourceTree = "<group>"; };
-		3AFC9EFA1F9A32F900C07CFE /* hash-extra-groestl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "hash-extra-groestl.c"; sourceTree = "<group>"; };
-		3AFC9EFB1F9A32F900C07CFE /* hash-extra-jh.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "hash-extra-jh.c"; sourceTree = "<group>"; };
-		3AFC9EFC1F9A32F900C07CFE /* hash-extra-skein.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "hash-extra-skein.c"; sourceTree = "<group>"; };
-		3AFC9EFD1F9A32F900C07CFE /* hash-ops.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hash-ops.h"; sourceTree = "<group>"; };
-		3AFC9EFE1F9A32F900C07CFE /* hash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hash.c; sourceTree = "<group>"; };
-		3AFC9EFF1F9A32F900C07CFE /* hash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
-		3AFC9F001F9A32F900C07CFE /* initializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = initializer.h; sourceTree = "<group>"; };
-		3AFC9F011F9A32F900C07CFE /* int-util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "int-util.h"; sourceTree = "<group>"; };
-		3AFC9F021F9A32F900C07CFE /* jh.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = jh.c; sourceTree = "<group>"; };
-		3AFC9F031F9A32F900C07CFE /* jh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jh.h; sourceTree = "<group>"; };
-		3AFC9F041F9A32F900C07CFE /* keccak.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = keccak.c; sourceTree = "<group>"; };
-		3AFC9F051F9A32F900C07CFE /* keccak.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keccak.h; sourceTree = "<group>"; };
-		3AFC9F061F9A32F900C07CFE /* oaes_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oaes_config.h; sourceTree = "<group>"; };
-		3AFC9F071F9A32F900C07CFE /* oaes_lib.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = oaes_lib.c; sourceTree = "<group>"; };
-		3AFC9F081F9A32F900C07CFE /* oaes_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = oaes_lib.h; sourceTree = "<group>"; };
-		3AFC9F091F9A32F900C07CFE /* random.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = random.c; sourceTree = "<group>"; };
-		3AFC9F0A1F9A32F900C07CFE /* random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = random.h; sourceTree = "<group>"; };
-		3AFC9F0B1F9A32F900C07CFE /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
-		3AFC9F0C1F9A32F900C07CFE /* skein.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = skein.c; sourceTree = "<group>"; };
-		3AFC9F0D1F9A32F900C07CFE /* skein.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = skein.h; sourceTree = "<group>"; };
-		3AFC9F0E1F9A32F900C07CFE /* skein_port.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = skein_port.h; sourceTree = "<group>"; };
-		3AFC9F0F1F9A32F900C07CFE /* slow-hash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "slow-hash.c"; sourceTree = "<group>"; };
-		3AFC9F101F9A32F900C07CFE /* tree-hash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "tree-hash.c"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +40,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A289DE51FA21E44004E9521 /* libcncrypto.a in Frameworks */,
+				3A1E4BA91FA22638003DC16A /* libcommon.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A289DE31FA21E41004E9521 /* monero */ = {
+			isa = PBXGroup;
+			children = (
+				3A289DEA1FA220A2004E9521 /* common */,
+				3A289DE41FA21E41004E9521 /* libcncrypto.a */,
+				3ADF65FF1FA2E3F0009EC809 /* hash-ops.h */,
+			);
+			path = monero;
+			sourceTree = "<group>";
+		};
+		3A289DEA1FA220A2004E9521 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				3A289DEB1FA220A2004E9521 /* int-util.h */,
+				3A289DEC1FA220A2004E9521 /* libcommon.a */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
 		3AFC9BCF1F9A285700C07CFE = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +86,7 @@
 		3AFC9BDA1F9A285700C07CFE /* CryptoNight */ = {
 			isa = PBXGroup;
 			children = (
-				3AFC9EE91F9A32F900C07CFE /* cryptonight */,
+				3A289DE31FA21E41004E9521 /* monero */,
 				3AFC9BDB1F9A285700C07CFE /* AppDelegate.h */,
 				3AFC9BDC1F9A285700C07CFE /* AppDelegate.m */,
 				3AFC9BDE1F9A285700C07CFE /* ViewController.h */,
@@ -128,65 +96,29 @@
 				3AFC9BE61F9A285700C07CFE /* LaunchScreen.storyboard */,
 				3AFC9BE91F9A285700C07CFE /* Info.plist */,
 				3AFC9BEA1F9A285700C07CFE /* main.m */,
-				3AFC9CD81F9A2A2200C07CFE /* CryptNightWrapper.h */,
-				3AFC9CD91F9A2A2200C07CFE /* CryptNightWrapper.mm */,
 			);
 			path = CryptoNight;
 			sourceTree = "<group>";
 		};
-		3AFC9EE91F9A32F900C07CFE /* cryptonight */ = {
-			isa = PBXGroup;
-			children = (
-				3AFC9EEA1F9A32F900C07CFE /* .gitignore */,
-				3AFC9EEB1F9A32F900C07CFE /* aesb.c */,
-				3AFC9EEC1F9A32F900C07CFE /* blake256.c */,
-				3AFC9EED1F9A32F900C07CFE /* blake256.h */,
-				3AFC9EEE1F9A32F900C07CFE /* chacha8.c */,
-				3AFC9EEF1F9A32F900C07CFE /* chacha8.h */,
-				3AFC9EF01F9A32F900C07CFE /* cn.h */,
-				3AFC9EF11F9A32F900C07CFE /* crypto-ops-data.c */,
-				3AFC9EF21F9A32F900C07CFE /* crypto-ops.c */,
-				3AFC9EF31F9A32F900C07CFE /* crypto-ops.h */,
-				3AFC9EF41F9A32F900C07CFE /* crypto.h */,
-				3AFC9EF51F9A32F900C07CFE /* generic-ops.h */,
-				3AFC9EF61F9A32F900C07CFE /* groestl.c */,
-				3AFC9EF71F9A32F900C07CFE /* groestl.h */,
-				3AFC9EF81F9A32F900C07CFE /* groestl_tables.h */,
-				3AFC9EF91F9A32F900C07CFE /* hash-extra-blake.c */,
-				3AFC9EFA1F9A32F900C07CFE /* hash-extra-groestl.c */,
-				3AFC9EFB1F9A32F900C07CFE /* hash-extra-jh.c */,
-				3AFC9EFC1F9A32F900C07CFE /* hash-extra-skein.c */,
-				3AFC9EFD1F9A32F900C07CFE /* hash-ops.h */,
-				3AFC9EFE1F9A32F900C07CFE /* hash.c */,
-				3AFC9EFF1F9A32F900C07CFE /* hash.h */,
-				3AFC9F001F9A32F900C07CFE /* initializer.h */,
-				3AFC9F011F9A32F900C07CFE /* int-util.h */,
-				3AFC9F021F9A32F900C07CFE /* jh.c */,
-				3AFC9F031F9A32F900C07CFE /* jh.h */,
-				3AFC9F041F9A32F900C07CFE /* keccak.c */,
-				3AFC9F051F9A32F900C07CFE /* keccak.h */,
-				3AFC9F061F9A32F900C07CFE /* oaes_config.h */,
-				3AFC9F071F9A32F900C07CFE /* oaes_lib.c */,
-				3AFC9F081F9A32F900C07CFE /* oaes_lib.h */,
-				3AFC9F091F9A32F900C07CFE /* random.c */,
-				3AFC9F0A1F9A32F900C07CFE /* random.h */,
-				3AFC9F0B1F9A32F900C07CFE /* readme.md */,
-				3AFC9F0C1F9A32F900C07CFE /* skein.c */,
-				3AFC9F0D1F9A32F900C07CFE /* skein.h */,
-				3AFC9F0E1F9A32F900C07CFE /* skein_port.h */,
-				3AFC9F0F1F9A32F900C07CFE /* slow-hash.c */,
-				3AFC9F101F9A32F900C07CFE /* tree-hash.c */,
-			);
-			path = cryptonight;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3A289DED1FA22B8E004E9521 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A289DEF1FA22B9A004E9521 /* int-util.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		3AFC9BD71F9A285700C07CFE /* CryptoNight */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AFC9BEE1F9A285700C07CFE /* Build configuration list for PBXNativeTarget "CryptoNight" */;
 			buildPhases = (
+				3A289DED1FA22B8E004E9521 /* Headers */,
 				3AFC9BD41F9A285700C07CFE /* Sources */,
 				3AFC9BD51F9A285700C07CFE /* Frameworks */,
 				3AFC9BD61F9A285700C07CFE /* Resources */,
@@ -251,28 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AAF0E8F1FA1C97100A993D0 /* aesb.c in Sources */,
-				3AAF0E921FA1C97100A993D0 /* crypto-ops-data.c in Sources */,
-				3AAF0E901FA1C97100A993D0 /* blake256.c in Sources */,
 				3AFC9BE01F9A285700C07CFE /* ViewController.m in Sources */,
-				3AAF0E951FA1C97100A993D0 /* hash-extra-blake.c in Sources */,
-				3AAF0E971FA1C97100A993D0 /* hash-extra-jh.c in Sources */,
-				3AAF0E9D1FA1C97100A993D0 /* random.c in Sources */,
-				3AAF0E8E1FA1C96300A993D0 /* CryptNightWrapper.mm in Sources */,
-				3AAF0E9B1FA1C97100A993D0 /* keccak.c in Sources */,
-				3AAF0EA01FA1C97100A993D0 /* tree-hash.c in Sources */,
-				3AAF0E9A1FA1C97100A993D0 /* jh.c in Sources */,
-				3AAF0E911FA1C97100A993D0 /* chacha8.c in Sources */,
-				3AAF0E961FA1C97100A993D0 /* hash-extra-groestl.c in Sources */,
-				3AAF0E9C1FA1C97100A993D0 /* oaes_lib.c in Sources */,
 				3AFC9BEB1F9A285700C07CFE /* main.m in Sources */,
-				3AAF0E9E1FA1C97100A993D0 /* skein.c in Sources */,
-				3AAF0E991FA1C97100A993D0 /* hash.c in Sources */,
 				3AFC9BDD1F9A285700C07CFE /* AppDelegate.m in Sources */,
-				3AAF0E9F1FA1C97100A993D0 /* slow-hash.c in Sources */,
-				3AAF0E941FA1C97100A993D0 /* groestl.c in Sources */,
-				3AAF0E931FA1C97100A993D0 /* crypto-ops.c in Sources */,
-				3AAF0E981FA1C97100A993D0 /* hash-extra-skein.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,8 +321,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED52ZNS3N9;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CryptoNight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/CryptoNight/monero/common",
+					"$(SRCROOT)/CryptoNight/monero",
+				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-mssse3",
 					"-mpclmul",
@@ -417,6 +338,7 @@
 					"-I$(SRCROOT)/xmrig/src",
 					"-I$(SRCROOT)/xmrig/src/3rdparty",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.voyagegroup.CryptoNight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -429,8 +351,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ED52ZNS3N9;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CryptoNight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/CryptoNight/monero/common",
+					"$(SRCROOT)/CryptoNight/monero",
+				);
 				OTHER_CFLAGS = (
 					"-mssse3",
 					"-mpclmul",
@@ -438,6 +367,7 @@
 					"-I$(SRCROOT)/xmrig/src",
 					"-I$(SRCROOT)/xmrig/src/3rdparty",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.voyagegroup.CryptoNight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
